@@ -24,3 +24,15 @@ public class practical5 {
         sc.close();
     }
 }
+/* 
+Enter number of rows: 9
+* 
+* * 
+*   * 
+*     * 
+*       * 
+*         * 
+*           * 
+*             * 
+* * * * * * * * * 
+*/
