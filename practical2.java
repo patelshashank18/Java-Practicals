@@ -11,9 +11,11 @@ public class practical2 {
                    else if(age>=13 && age<=19){
                     System.out.println("you are a teenager");
                    }
+                   
                    else if (age>=20 && age<=60){
                     System.out.println("you are adult");
                    }
+
                    else {
                     System.out.println("you are a senoir citizen");
                    }
