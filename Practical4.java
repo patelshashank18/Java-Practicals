@@ -7,7 +7,7 @@ public class Practical4 {
         Scanner sc = new Scanner(System.in);
 
         // While Loop
-        System.out.print("Enter a number for While Loop: ");
+        System.out.print("Enter a number for while Loop: ");
         int n1 = sc.nextInt();
 
         int i = 1;
@@ -19,12 +19,12 @@ public class Practical4 {
         }
 
         // Do-While Loop
-        System.out.print("\nEnter a number for Do-While Loop: ");
+        System.out.print("\nEnter a number for do-while Loop: ");
         int n2 = sc.nextInt();
 
         int j = 1;
 
-        System.out.println("\nUsing Do-While Loop:");
+        System.out.println("\nUsing do-while  loop:");
         do {
             System.out.println(j);
             j++;
@@ -32,4 +32,4 @@ public class Practical4 {
 
         sc.close();
     }
-}
+} 
