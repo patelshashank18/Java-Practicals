@@ -5,7 +5,7 @@ public class practical3 {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("===== MENU =====");
+        System.out.println("=-==== MENU ====-=");
         System.out.println("1. Addition");
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
