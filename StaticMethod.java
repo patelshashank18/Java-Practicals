@@ -1,4 +1,4 @@
-public class Practical12 {
+public class StaticMethod {
 
     // Static variable
     static String collegeName = "ABC College";

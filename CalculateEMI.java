@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Practical8 {
+public class CalculateEMI {
 
     double loanAmount;
     double annualInterestRate;
@@ -22,7 +22,7 @@ public class Practical8 {
 
         Scanner sc = new Scanner(System.in);
 
-        Practical8 emiCalculator = new Practical8();
+        CalculateEMI emiCalculator = new CalculateEMI();
 
         System.out.print("Enter Loan Amount: ");
         emiCalculator.loanAmount = sc.nextDouble();

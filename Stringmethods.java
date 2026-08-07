@@ -1,4 +1,4 @@
-public class Practical10 {
+public class Stringmethods {
 
     public static void main(String[] args) {
 

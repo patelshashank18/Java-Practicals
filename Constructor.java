@@ -1,9 +1,9 @@
-public class constructor {
+public class Constructor {
 
     int num1, num2;
     // no passed parameter its called default constructure 
     // default constructor
-    constructor() {
+    Constructor() {
         num1 = 0;
         num2 = 0;
         System.out.println("Default Constructor Called");
@@ -12,7 +12,7 @@ public class constructor {
     }
 
     // parameterized constructor
-    constructor(int a, int b) {
+    Constructor(int a, int b) {
         num1 = a;
         num2 = b;
         System.out.println("\nParameterized Constructor Called");
@@ -27,10 +27,10 @@ public class constructor {
     public static void main(String[] args) {
 
         // calling default constructor
-        constructor obj1 = new constructor();
+        Constructor obj1 = new Constructor();
 
         // calling parameterized constructor
-        constructor obj2 = new constructor(20, 30);
+        Constructor obj2 = new Constructor(20, 30);
         obj2.display();
     }
 }

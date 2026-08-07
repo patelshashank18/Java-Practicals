@@ -29,7 +29,7 @@ class Student extends Person {
     }
 }
 
-public class Practical11 {
+public class ThisSuper {
     public static void main(String[] args) {
 
         Student s = new Student();
