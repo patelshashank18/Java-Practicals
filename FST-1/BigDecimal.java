@@ -15,15 +15,19 @@ public class BigDecimal {
         System.out.print("Enter second string: ");
         String secondString = sc.nextLine();
 
-        // Compare the two strings using the == operator
-        System.out.println("\nUsing == operator:");
-        System.out.println(firstString == secondString);
+        // Demonstrate charAt() method
+        System.out.println("\nUsing charAt() method:");
+        System.out.println(firstString.charAt(0));
 
-        // Compare the contents of the two strings using equals()
+        // Demonstrate concat() method
+        System.out.println("\nUsing concat() method:");
+        System.out.println(firstString.concat(secondString));
+
+        // Demonstrate equals() method
         System.out.println("\nUsing equals() method:");
         System.out.println(firstString.equals(secondString));
 
-        // Close the Scanner object
+        // Close Scanner
         sc.close();
     }
 }

@@ -3,64 +3,70 @@ import java.util.Scanner;
 public class SwitchCase {
     public static void main(String[] args) {
 
-        // Create Scanner object to take input from the user
+        // Create Scanner object to take input
         Scanner sc = new Scanner(System.in);
 
-        // Display the calculator menu
-        System.out.println("=-==== MENU ====-=");
-        System.out.println("1. Addition");
-        System.out.println("2. Subtraction");
-        System.out.println("3. Multiplication");
-        System.out.println("4. Division");
+        // Ask the user to enter month number
+        System.out.print("Enter month number (1-12): ");
+        int month = sc.nextInt();
 
-        // Read the user's menu choice
-        System.out.print("Enter your case 3choice (1-4): ");
-        int choice = sc.nextInt();
+        // Find month name using switch-case
+        switch (month) {
 
-        // Read the first number
-        System.out.print("Enter first number: ");
-        int a = sc.nextInt();
-
-        // Read the second number
-        System.out.print("Enter second number: ");
-        int b = sc.nextInt();
-
-        // Perform the selected operation using switch-case
-        switch (choice) {
-
-            // Perform addition
             case 1:
-                System.out.println("Addition = " + (a + b));
+                System.out.println("January");
                 break;
 
-            // Perform subtraction
             case 2:
-                System.out.println("Subtraction = " + (a - b));
+                System.out.println("February");
                 break;
 
-            // Perform multiplication
             case 3:
-                System.out.println("Multiplication = " + (a * b));
+                System.out.println("March");
                 break;
 
-            // Perform division
             case 4:
-
-                // Check for division by zero
-                if (b != 0) {
-                    System.out.println("Division = " + (a / b));
-                } else {
-                    System.out.println("Division by zero is not allowed.");
-                }
+                System.out.println("April");
                 break;
 
-            // Execute if the user enters an invalid choice
+            case 5:
+                System.out.println("May");
+                break;
+
+            case 6:
+                System.out.println("June");
+                break;
+
+            case 7:
+                System.out.println("July");
+                break;
+
+            case 8:
+                System.out.println("August");
+                break;
+
+            case 9:
+                System.out.println("September");
+                break;
+
+            case 10:
+                System.out.println("October");
+                break;
+
+            case 11:
+                System.out.println("November");
+                break;
+
+            case 12:
+                System.out.println("December");
+                break;
+
+            // If the number is not between 1 and 12
             default:
-                System.out.println("Invalid choice!");
+                System.out.println("Invalid month number!");
         }
 
-        // Close the Scanner object
+        // Close Scanner
         sc.close();
-
     }
 }
