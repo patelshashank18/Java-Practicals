@@ -1,7 +1,8 @@
 public class Constructor {
 
     int num1, num2;
-    // no passed parameter its called default constructure 
+
+    // no passed parameter its called default constructure
     // default constructor
     Constructor() {
         num1 = 0;

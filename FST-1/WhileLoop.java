@@ -32,4 +32,4 @@ public class WhileLoop {
 
         sc.close();
     }
-} 
+}

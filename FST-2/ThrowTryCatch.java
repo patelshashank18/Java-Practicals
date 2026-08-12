@@ -1,37 +1,47 @@
 import java.util.Scanner;
 
 public class ThrowTryCatch {
+
+    // Method uses 'throws' keyword
+    static void checkAge(int age) throws Exception {
+
+        // Check if age is less than 18
+        if (age < 18) {
+
+            // Manually throw an exception
+            throw new Exception("You are not eligible to vote.");
+        }
+
+        System.out.println("You can vote.");
+    }
+
     public static void main(String[] args) {
 
-        // Create Scanner object to take input from the user
+        // Create Scanner object
         Scanner sc = new Scanner(System.in);
 
         try {
-            // Ask the user to enter their age
+            // Ask user to enter age
             System.out.print("Enter your age: ");
 
-            // Read the age entered by the user
+            // Read age from user
             int age = sc.nextInt();
 
-            // Check if the age is less than 18
-            if (age < 18) {
-
-                // Manually throw an exception
-                throw new Exception("You are not eligible to vote.");
-            }
-
-            // This statement executes if age is 18 or above
-            System.out.println("You can vote.");
+            // Call method that uses 'throws'
+            checkAge(age);
         }
 
-        // Handle the exception
+        // Handle exception
         catch (Exception e) {
 
-            // Print the exception message
-            System.out.println(e.getMessage());
+            System.out.println("Exception: " + e.getMessage());
         }
 
-        // Close the Scanner object
-        sc.close();
+        // This block always executes
+        finally {
+
+            System.out.println("Finally block executed.");
+            sc.close();
+        }
     }
 }

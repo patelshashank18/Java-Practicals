@@ -3,41 +3,54 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+/*
+ * Practical 25:
+ * Read data from the myTestFile using
+ * File Handling, Input Handling, Loops,
+ * String Handling, and Exception Handling.
+
+ */
+
+/**
+ * MyTestFileread reads and displays data
+ * from the myTestFile.
+ */
 public class MyTestFileread {
 
+    /**
+     * Main method of the program.
+     */
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter file name: ");
-        String fileName = sc.nextLine();
-
         try {
-
-            // Open the file
-            FileReader fr = new FileReader(fileName);
-
-            // Read the file
-            BufferedReader br = new BufferedReader(fr);
+            // Open the myTestFile
+            BufferedReader br = new BufferedReader(
+                    new FileReader("myTestFile"));
 
             String line;
 
-            System.out.println("\nFile Contents:");
-            System.out.println("----------------------");
+            System.out.println("File Contents:");
+            System.out.println("--------------------");
 
-            // Read line by line
+            // Read the file line by line
             while ((line = br.readLine()) != null) {
-                System.out.println(line);
+
+                // String handling using trim()
+                line = line.trim();
+
+                if (!line.isEmpty()) {
+                    System.out.println(line);
+                }
             }
 
-            // Close the file
             br.close();
-            fr.close();
 
         } catch (IOException e) {
 
+            // Handle file-related exception
             System.out.println("Error: " + e.getMessage());
-
         }
 
         sc.close();

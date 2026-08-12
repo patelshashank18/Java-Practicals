@@ -1,25 +1,28 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class StringValues {
 
     public static void main(String[] args) {
 
-        String str1 = "Hello";
-        String str2 = "World";
-        String str3 = "hello";
-        String str4 = " Java Programming ";
+        // Create an ArrayList to store String values
+        ArrayList<String> list = new ArrayList<>();
 
-        // 1. charAt()
-        System.out.println("charAt(1): " + str1.charAt(1));
+        // Add String values to the list
+        list.add("Hello");
+        list.add("World");
+        list.add("$Jigar");
+        list.add("Java");
+        list.add("Programming");
 
-        // 2. concat()
-        System.out.println("concat(): " + str1.concat(" " + str2));
+        // Create Iterator object
+        Iterator<String> iterator = list.iterator();
 
-        // 3. equals()
-        System.out.println("equals(): " + str1.equals(str2));
+        // Print all values using Iterator
+        System.out.println("String values in the list:");
 
-        // 4. equalsIgnoreCase()
-        System.out.println("equalsIgnoreCase(): " + str1.equalsIgnoreCase(str3));
-
-        // 5. length()
-        System.out.println("length(): " + str1.length());
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
