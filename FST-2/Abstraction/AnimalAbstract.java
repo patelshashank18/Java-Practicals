@@ -1,19 +1,17 @@
-/*
- * Abstract parent class for abstraction.
- */
-
-/**
- * Defines an abstract animal.
- */
 package Abstraction;
 
-public abstract class AnimalAbstract {
+/**
+ * Abstract class representing an animal.
+ */
+abstract class AnimalAbstract {
 
-    // Abstract method
+    /**
+     * Defines the sound behavior.
+     */
     abstract void sound();
 
-    // Normal method
-    void eat() {
-        System.out.println("Animal is eating.");
-    }
+    /**
+     * Defines the eating behavior.
+     */
+    abstract void eat();
 }

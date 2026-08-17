@@ -1,22 +1,40 @@
-
 package Polymorphism;
-// Compile-time Polymorphism
 
-// Method Overloading
-
+/**
+ * Demonstrates compile-time polymorphism using method overloading.
+ */
 class CalculatorPolymorphism {
 
-    // Method with 2 integer parameters
+    /**
+     * Adds two integer values.
+     *
+     * @param a first integer
+     * @param b second integer
+     * @return sum of the two integers
+     */
     int add(int a, int b) {
         return a + b;
     }
 
-    // Method with 3 integer parameters
+    /**
+     * Adds three integer values.
+     *
+     * @param a first integer
+     * @param b second integer
+     * @param c third integer
+     * @return sum of the three integers
+     */
     int add(int a, int b, int c) {
         return a + b + c;
     }
 
-    // Method with 2 double parameters
+    /**
+     * Adds two double values.
+     *
+     * @param a first double value
+     * @param b second double value
+     * @return sum of the two double values
+     */
     double add(double a, double b) {
         return a + b;
     }

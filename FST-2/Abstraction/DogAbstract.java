@@ -1,18 +1,23 @@
-/*
- * DogAbstract provides implementation
- * of the abstract sound() method.
- */
-
-/**
- * Represents a dog.
- */
 package Abstraction;
 
-public class DogAbstract extends AnimalAbstract {
+/**
+ * DogAbstract provides implementations
+ * for the AnimalAbstract methods.
+ */
+class DogAbstract extends AnimalAbstract {
 
-    // Implement abstract method
+    /**
+     * Displays the dog's sound.
+     */
     @Override
     void sound() {
-        System.out.println("Dog says Bark.");
+        System.out.println("Dog barks");
+    }
+    /**
+     * Displays the dog's eating behavior.
+     */
+    @Override
+    void eat() {
+        System.out.println("Dog eats");
     }
 }

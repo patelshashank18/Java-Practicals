@@ -1,12 +1,22 @@
 import java.util.Scanner;
 
+/**
+ * Demonstrates the use of while loop and do-while loop.
+ */
 public class WhileLoop {
 
+    /**
+     * Main method of the program.
+     *
+     * @param args command-line arguments
+     */
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // While Loop
+        /**
+         * While Loop.
+         */
         System.out.print("Enter a number for while Loop: ");
         int n1 = sc.nextInt();
 
@@ -18,7 +28,9 @@ public class WhileLoop {
             i++;
         }
 
-        // Do-While Loop
+        /**
+         * Do-While Loop.
+         */
         System.out.print("\nEnter a number for do-while Loop: ");
         int n2 = sc.nextInt();
 

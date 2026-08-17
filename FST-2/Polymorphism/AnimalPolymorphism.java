@@ -1,10 +1,14 @@
-package Polymorphism;// Runtime Polymorphism
+package Polymorphism;
 
-// Method Overriding
-
+/**
+ * Parent class representing an animal.
+ * Demonstrates runtime polymorphism.
+ */
 class AnimalPolymorphism {
 
-    // Parent class method
+    /**
+     * Parent class method that displays an animal sound.
+     */
     void sound() {
         System.out.println("Animal makes a sound.");
     }
