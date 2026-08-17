@@ -12,6 +12,6 @@ public class DogInterface implements AnimalInterface {
     // Implement interface method
     @Override
     public void sound() {
-        System.out.println("Dog 1231says Bark.");
+        System.out.println("Dog says Bark.");
     }
 }
