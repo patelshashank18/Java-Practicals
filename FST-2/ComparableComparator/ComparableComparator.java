@@ -1,79 +1,79 @@
 package ComparableComparator;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 /**
- * Demonstrates the Comparable and Comparator interfaces
- * using student data and different sorting methods.
+ * Practical 19:
+ * Write a program to find the index of an array element.
+ *
+ * Demonstrates:
+ * Array, List, Set, Map, Comparable and Comparator.
  */
 public class ComparableComparator {
 
-    /**
-     * Main method of the program.
-     *
-     * @param args command-line arguments
-     */
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-
         /**
-         * Create an ArrayList to store students.
+         * Condition 1: Find index of an array element.
          */
-        ArrayList<Student> list = new ArrayList<>();
+        int[] arr = { 10, 20, 30, 40, 50 };
+        int search = 30;
 
-        System.out.print("Enter number of students: ");
-        int n = sc.nextInt();
-
-        /**
-         * Take student details from the user.
-         */
-        for (int i = 0; i < n; i++) {
-
-            System.out.print("Enter Roll No, Name and Marks: ");
-
-            int roll = sc.nextInt();
-            String name = sc.next();
-            int marks = sc.nextInt();
-
-            list.add(new Student(roll, name, marks));
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == search) {
+                System.out.println("Index: " + i);
+                break;
+            }
         }
 
         /**
-         * Display the original student list.
+         * Condition 2: List.
          */
-        System.out.println("\nOriginal List:");
-        System.out.println(list);
+        List<Element> list = new ArrayList<>();
+
+        list.add(new Element(3, "Rahul", 70));
+        list.add(new Element(1, "Jigar", 90));
+        list.add(new Element(2, "Amit", 80));
+
+        System.out.println("List: " + list);
 
         /**
-         * Comparable:
-         * Sort students by roll number.
+         * Condition 3: Set.
+         */
+        Set<String> set = new HashSet<>();
+
+        set.add("Jigar");
+        set.add("Rahul");
+        set.add("Jigar");
+
+        System.out.println("Set: " + set);
+
+        /**
+         * Condition 4: Map.
+         */
+        Map<Integer, String> map = new HashMap<>();
+
+        map.put(1, "Jigar");
+        map.put(2, "Rahul");
+
+        System.out.println("Map: " + map);
+
+        /**
+         * Condition 5: Comparable - Sort by ID.
          */
         Collections.sort(list);
-
-        System.out.println("\nSorted by Roll Number:");
-        System.out.println(list);
+        System.out.println("By ID: " + list);
 
         /**
-         * Comparator:
-         * Sort students by name.
+         * Condition 6: Comparator - Sort by Name.
          */
-        Collections.sort(list, new NameComparator());
-
-        System.out.println("\nSorted by Name:");
-        System.out.println(list);
+        Collections.sort(list, new SortByName());
+        System.out.println("By Name: " + list);
 
         /**
-         * Comparator:
-         * Sort students by marks.
+         * Condition 7: Comparator - Sort by Marks.
          */
-        Collections.sort(list, new MarksComparator());
-
-        System.out.println("\nSorted by Marks:");
-        System.out.println(list);
-
-        sc.close();
+        Collections.sort(list, new SortByMarks());
+        System.out.println("By Marks: " + list);
     }
 }

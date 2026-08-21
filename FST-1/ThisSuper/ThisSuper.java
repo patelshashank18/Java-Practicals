@@ -1,3 +1,5 @@
+package ThisSuper;
+
 /**
  * Main class to demonstrate the use of this and super keywords.
  */
@@ -25,7 +27,7 @@ public class ThisSuper {
         System.out.println();
 
         /**
-         * Calls the display() method of Student.
+         * Calls both Person and Student display methods.
          */
         s.display();
     }
