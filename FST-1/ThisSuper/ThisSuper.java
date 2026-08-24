@@ -20,14 +20,14 @@ public class ThisSuper {
         System.out.println();
 
         /**
-         * Displays the Student and Person names using this and super.
+         * Demonstrates this and super keywords.
          */
         s.show();
 
         System.out.println();
 
         /**
-         * Calls both Person and Student display methods.
+         * Calls the overridden display method.
          */
         s.display();
     }
