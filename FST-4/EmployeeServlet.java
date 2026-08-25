@@ -6,14 +6,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/** EmployeeServlet handles employee registration request */
 @WebServlet("/register")
 public class EmployeeServlet extends HttpServlet {
 
+        /** Handles POST request from employee registration form */
         protected void doPost(HttpServletRequest request,
                         HttpServletResponse response)
                         throws ServletException, IOException {
 
-                // Get form data
+                /** Get form data */
                 String firstName = request.getParameter("firstName");
 
                 String lastName = request.getParameter("lastName");
@@ -25,7 +27,7 @@ public class EmployeeServlet extends HttpServlet {
                 double salary = Double.parseDouble(
                                 request.getParameter("salary"));
 
-                // Create Employee object
+                /** Create Employee object */
                 Employee employee = new Employee(
                                 firstName,
                                 lastName,
@@ -33,15 +35,16 @@ public class EmployeeServlet extends HttpServlet {
                                 phone,
                                 salary);
 
-                // Create DAO object
+                /** Create DAO object */
                 EmployeeDao dao = new EmployeeDao();
 
-                // Save employee data
+                /** Save employee data into database */
                 dao.saveEmployee(employee);
 
-                // Send response
+                /** Set response content type */
                 response.setContentType("text/html");
 
+                /** Send response to browser */
                 response.getWriter().println(
                                 "<html><body>"
                                                 + "<h2>Employee Registered Successfully!</h2>"
