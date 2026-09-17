@@ -32,9 +32,8 @@ public class Comparator {
             System.out.println(student);
         }
 
-        /**
-         * Sort students by marks in descending order.
-         */
+        // Sort students by marks in descending order.
+
         students.sort(
                 java.util.Comparator
                         .comparingInt(Student::getMarks)

@@ -29,9 +29,8 @@ public class Main {
         System.out.println("\n===== FILE HANDLING =====");
         FileHandling.demonstrate();
 
-        /**
-         * Uncomment the following line to test input handling.
-         */
+        // Uncomment the following line to test input handling.
+
         // InputHandling.demonstrate();
     }
 }

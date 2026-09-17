@@ -17,16 +17,14 @@ public class FileHandling {
 
         try {
 
-            /**
-             * Create a new file.
-             */
+            // Create a new file.
+
             if (file.createNewFile()) {
                 System.out.println("File created successfully.");
             }
 
-            /**
-             * Write student information into the file.
-             */
+            // Write student information into the file.
+
             FileWriter writer = new FileWriter(file);
 
             writer.write("Student Name: Amit\n");
@@ -36,9 +34,8 @@ public class FileHandling {
 
             System.out.println("Data written successfully.");
 
-            /**
-             * Read the contents of the file.
-             */
+            // Read the contents of the file.
+
             Scanner scanner = new Scanner(file);
 
             System.out.println("\nFile Content:");
@@ -51,9 +48,8 @@ public class FileHandling {
 
         } catch (IOException e) {
 
-            /**
-             * Handle file-related exceptions.
-             */
+            // Handle file-related exceptions.
+
             System.out.println("File error: " + e.getMessage());
         }
     }

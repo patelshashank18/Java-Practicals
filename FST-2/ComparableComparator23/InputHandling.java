@@ -12,15 +12,13 @@ public class InputHandling {
 
         Scanner scanner = new Scanner(System.in);
 
-        /**
-         * Read student name from the user.
-         */
+        // Read student name from the user.
+
         System.out.print("Enter student name: ");
         String name = scanner.nextLine();
 
-        /**
-         * Read student age from the user.
-         */
+        // Read student age from the user.
+
         System.out.print("Enter student age: ");
         int age = scanner.nextInt();
 
