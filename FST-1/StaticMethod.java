@@ -9,16 +9,10 @@ public class StaticMethod {
      */
     static String collegeName = "ABC College";
 
-    /**
-     * Static block that executes when the class is loaded.
-     */
     static {
         System.out.println("Static block is executed.");
     }
 
-    /**
-     * Static method that displays the college name.
-     */
     static void displayCollege() {
         System.out.println("College Name: " + collegeName);
     }
@@ -32,9 +26,7 @@ public class StaticMethod {
 
         System.out.println("Main method is executed.");
 
-        /**
-         * Calls the static displayCollege() method.
-         */
         displayCollege();
     }
+
 }

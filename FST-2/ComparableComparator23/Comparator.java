@@ -20,9 +20,8 @@ public class Comparator {
         students.add(new Student(101, "Amit", 85));
         students.add(new Student(102, "Neha", 90));
 
-        /**
-         * Sort students alphabetically by name.
-         */
+        // Sort students alphabetically by name.
+
         students.sort(
                 java.util.Comparator.comparing(Student::getName));
 

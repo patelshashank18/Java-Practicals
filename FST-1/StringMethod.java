@@ -54,4 +54,5 @@ public class StringMethod {
         String str5 = "";
         System.out.println("isEmpty(): " + str5.isEmpty());
     }
+
 }
