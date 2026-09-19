@@ -37,11 +37,8 @@ public class StringMethod {
         // startsWith() checks the starting characters.
         System.out.println("startsWith(): " + str3.startsWith("Hello"));
 
-        // endsWith() checks the ending characters.
-        System.out.println("endsWith(): " + str3.endsWith("Programming"));
-
         // indexOf() returns the index of a character or string.
-        System.out.println("indexOf(): " + str3.indexOf("Java"));
+        System.out.println("indexOf(): " + str3.indexOf("Programming"));
 
         // replace() replaces characters or text.
         System.out.println("replace(): " + str3.replace("Java", "Python"));
