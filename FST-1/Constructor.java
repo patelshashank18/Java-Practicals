@@ -1,6 +1,11 @@
 /**
+ * Practical 7: Write a program to demonstrate the example of constructor and
+ * parameterized constructor.
+ *
+ * <p>
  * Demonstrates default and parameterized constructors
  * using two integer values.
+ * </p>
  */
 public class Constructor {
 
@@ -46,15 +51,12 @@ public class Constructor {
      */
     public static void main(String[] args) {
 
-        /**
-         * Creates an object using the default constructor.
-         */
+        // Creates an object using the default constructor.
         Constructor obj1 = new Constructor();
 
-        /**
-         * Creates an object using the parameterized constructor.
-         */
+        // Creates an object using the parameterized constructor.
         Constructor obj2 = new Constructor(20, 30);
         obj2.display();
     }
+
 }

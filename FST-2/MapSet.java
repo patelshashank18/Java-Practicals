@@ -2,8 +2,13 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 /**
+ * Practical 21:
+ * Write another program using Map and Set concepts.
+ *
+ * <p>
  * Demonstrates the use of HashMap and HashSet
  * in Java Collections.
+ * </p>
  */
 public class MapSet {
 
@@ -14,48 +19,34 @@ public class MapSet {
      */
     public static void main(String[] args) {
 
-        /**
-         * Create a HashMap to store integer keys
-         * and String values.
-         */
+        // Create a HashMap to store integer keys and String values.
         HashMap<Integer, String> map = new HashMap<>();
 
-        /**
-         * Add key-value pairs to the HashMap.
-         */
+        // Add key-value pairs to the HashMap.
         map.put(1, "Shashank");
         map.put(2, "Rahul");
         map.put(3, "Amit");
 
-        /**
-         * Display the HashMap elements.
-         */
+        // Display the HashMap elements.
         System.out.println("Map Elements:");
         System.out.println(map);
 
-        /**
-         * Create a HashSet to store unique String values.
-         */
+        // Create a HashSet to store unique String values.
         HashSet<String> set = new HashSet<>();
 
-        /**
-         * Add elements to the HashSet.
-         */
+        // Add elements to the HashSet.
         set.add("Java");
         set.add("Python");
         set.add("C++");
 
-        /**
-         * Add a duplicate value.
-         * HashSet does not allow duplicate elements,
-         * so the second "Java" is ignored.
-         */
+        // Add a duplicate value.
+        // HashSet does not allow duplicate elements,
+        // so the second "Java" is ignored.
         set.add("Java");
 
-        /**
-         * Display the HashSet elements.
-         */
+        // Display the HashSet elements.
         System.out.println("\nSet Elements:");
         System.out.println(set);
     }
+
 }

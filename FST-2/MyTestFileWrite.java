@@ -16,61 +16,42 @@ public class MyTestFileWrite {
      */
     public static void main(String[] args) {
 
-        /**
-         * Creates a Scanner object to read
-         * personal details from the user.
-         */
+        // Creates a Scanner object to read personal details from the user.
         try (Scanner sc = new Scanner(System.in);
                 FileWriter writer = new FileWriter("myTestFile")) {
 
-            /**
-             * Reads the name of the user.
-             */
+            // Reads the name of the user.
             System.out.print("Enter Your Name: ");
             String name = sc.nextLine();
 
-            /**
-             * Reads the age of the user.
-             */
+            // Reads the age of the user.
             System.out.print("Enter Your Age: ");
             int age = sc.nextInt();
             sc.nextLine();
 
-            /**
-             * Reads the city of the user.
-             */
+            // Reads the city of the user.
             System.out.print("Enter Your City: ");
             String city = sc.nextLine();
 
-            /**
-             * Reads the mobile number of the user.
-             */
+            // Reads the mobile number of the user.
             System.out.print("Enter Your Mobile Number: ");
             String mobile = sc.nextLine();
 
-            /**
-             * Writes the personal details
-             * into the myTestFile.
-             */
+            // Writes the personal details into the myTestFile.
             writer.write("Personal Details\n");
             writer.write("Name: " + name + "\n");
             writer.write("Age: " + age + "\n");
             writer.write("City: " + city + "\n");
             writer.write("Mobile: " + mobile + "\n");
 
-            /**
-             * Displays a success message after
-             * the data has been written successfully.
-             */
+            // Displays a success message after the data has been written successfully.
             System.out.println("\nData successfully written to myTestFile");
 
         } catch (IOException e) {
 
-            /**
-             * Displays an error message if a
-             * file-related exception occurs.
-             */
+            // Displays an error message if a file-related exception occurs.
             System.out.println("Error: " + e.getMessage());
         }
     }
+
 }

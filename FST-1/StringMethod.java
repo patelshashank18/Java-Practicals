@@ -1,5 +1,19 @@
+/**
+ * Practical 10:
+ * Create a program to demonstrate various String methods
+ * such as charAt(), concat(), equals(), and others.
+ *
+ * <p>
+ * Demonstrates commonly used String methods in Java.
+ * </p>
+ */
 public class StringMethod {
 
+    /**
+     * Main method of the program.
+     *
+     * @param args command-line arguments
+     */
     public static void main(String[] args) {
 
         String str1 = "Hello";

@@ -1,8 +1,14 @@
 import java.util.Scanner;
 
 /**
- * Demonstrates the use of a switch-case statement
- * to display the month name based on the month number.
+ * Practical 3:
+ * Write a program to find the current month name from the given
+ * number using a switch-case statement.
+ *
+ * <p>
+ * Demonstrates the use of a switch-case statement to display
+ * the month name based on the month number.
+ * </p>
  */
 public class SwitchCase {
 
@@ -13,20 +19,14 @@ public class SwitchCase {
      */
     public static void main(String[] args) {
 
-        /**
-         * Create Scanner object to take input.
-         */
+        // Create Scanner object to take input.
         Scanner sc = new Scanner(System.in);
 
-        /**
-         * Ask the user to enter month number.
-         */
+        // Ask the user to enter month number.
         System.out.print("Enter month number (1-12): ");
         int month = sc.nextInt();
 
-        /**
-         * Find month name using switch-case.
-         */
+        // Find month name using switch-case.
         switch (month) {
 
             case 1:
@@ -77,17 +77,13 @@ public class SwitchCase {
                 System.out.println("December");
                 break;
 
-            /**
-             * If the number is not between 1 and 12,
-             * display an invalid month message.
-             */
+            // If the number is not between 1 and 12, display an invalid month message.
             default:
                 System.out.println("Invalid month number!");
         }
 
-        /**
-         * Close Scanner.
-         */
+        // Close Scanner.
         sc.close();
     }
+
 }

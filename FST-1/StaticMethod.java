@@ -1,6 +1,11 @@
 /**
- * Demonstrates the use of static variables,
- * static blocks, and static methods.
+ * Practical 12:
+ * Write a program to demonstrate static methods, variables, and blocks.
+ *
+ * <p>
+ * Demonstrates the use of static variables, static blocks,
+ * and static methods.
+ * </p>
  */
 public class StaticMethod {
 

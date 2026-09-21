@@ -6,9 +6,8 @@ package Polymorphism;
  */
 class AnimalPolymorphism {
 
-    /**
-     * Parent class method that displays an animal sound.
-     */
+    // Parent class method that displays an animal sound.
+
     void sound() {
         System.out.println("Animal makes a sound.");
     }

@@ -4,7 +4,7 @@ package Polymorphism.CompiletimePolymorphism;
 public class CompileTimePolymorphism {
     public static void main(String[] args) {
 
-        /** Calling overloaded methods */
+        // Calling overloaded methods
         Calculator c = new Calculator();
 
         System.out.println(c.add(10, 20));

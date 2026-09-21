@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
 /**
- * Demonstrates the use of while loop and do-while loop.
+ * Practical 4:
+ * Write a program to demonstrate the use of while loop
+ * and do-while loop.
+ *
+ * <p>
+ * Demonstrates printing numbers using while and do-while loops.
+ * </p>
  */
 public class WhileLoop {
 
@@ -14,9 +20,7 @@ public class WhileLoop {
 
         Scanner sc = new Scanner(System.in);
 
-        /**
-         * While Loop.
-         */
+        // While Loop.
         System.out.print("Enter a number for while Loop: ");
         int n1 = sc.nextInt();
 
@@ -28,15 +32,13 @@ public class WhileLoop {
             i++;
         }
 
-        /**
-         * Do-While Loop.
-         */
+        // Do-While Loop.
         System.out.print("\nEnter a number for do-while Loop: ");
         int n2 = sc.nextInt();
 
         int j = 1;
 
-        System.out.println("\nUsing do-while  loop:");
+        System.out.println("\nUsing do-while loop:");
         do {
             System.out.println(j);
             j++;
@@ -44,4 +46,5 @@ public class WhileLoop {
 
         sc.close();
     }
+
 }
