@@ -4,6 +4,9 @@ import java.util.Comparator;
 
 /**
  * Comparator class to sort students by marks.
+ *
+ * This class compares Student objects based
+ * on their marks.
  */
 class MarksComparator implements Comparator<Student> {
 
@@ -16,6 +19,8 @@ class MarksComparator implements Comparator<Student> {
      */
     @Override
     public int compare(Student s1, Student s2) {
+
+        // Compare the marks of two students
         return Integer.compare(s1.marks, s2.marks);
     }
 }
