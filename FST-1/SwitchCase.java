@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Practical 3:
+ * Practical 3
  * Write a program to find the current month name from the given
  * number using a switch-case statement.
  *
