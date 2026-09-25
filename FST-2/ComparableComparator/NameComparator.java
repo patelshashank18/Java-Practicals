@@ -4,6 +4,9 @@ import java.util.Comparator;
 
 /**
  * Comparator class to sort students by name.
+ *
+ * This class compares Student objects based
+ * on their names.
  */
 class NameComparator implements Comparator<Student> {
 
@@ -16,6 +19,8 @@ class NameComparator implements Comparator<Student> {
      */
     @Override
     public int compare(Student s1, Student s2) {
+
+        // Compare the names of two students
         return s1.name.compareTo(s2.name);
     }
 }
