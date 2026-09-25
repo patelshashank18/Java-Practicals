@@ -1,11 +1,10 @@
 /**
  * Practical 9:
- * Create a practical to compare two variables of Wrapper class
- * using Wrapper classes.
+ * Demonstrates comparison of two Wrapper class variables.
  *
  * <p>
- * Demonstrates the use of the Integer wrapper class
- * and its equals() and compareTo() methods.
+ * This program uses the Integer wrapper class
+ * and demonstrates equals() and compareTo() methods.
  * </p>
  */
 public class WrapperClass {
@@ -17,23 +16,35 @@ public class WrapperClass {
      */
     public static void main(String[] args) {
 
-        // Creates Wrapper class objects.
+        // Create Integer wrapper class objects.
         Integer firstNumber = Integer.valueOf(50);
         Integer secondNumber = Integer.valueOf(80);
 
+        /*
+         * Display both wrapper class values
+         * before performing comparisons.
+         */
         System.out.println("First Number : " + firstNumber);
         System.out.println("Second Number: " + secondNumber);
 
-        // Uses the equals() method to compare the two numbers.
+        /**
+         * Compare the two Integer objects using
+         * the equals() method.
+         */
         if (firstNumber.equals(secondNumber)) {
             System.out.println("Both numbers are equal.");
         } else {
             System.out.println("Both numbers are not equal.");
         }
 
-        // Uses the compareTo() method to compare the two numbers.
+        // Compare the two numbers using compareTo().
         int comparisonResult = firstNumber.compareTo(secondNumber);
 
+        /*
+         * Check the comparison result to determine
+         * whether the first number is equal to,
+         * greater than, or smaller than the second number.
+         */
         if (comparisonResult == 0) {
             System.out.println("Both numbers are equal.");
         } else if (comparisonResult > 0) {
@@ -42,5 +53,4 @@ public class WrapperClass {
             System.out.println("First number is smaller than second number.");
         }
     }
-
 }
