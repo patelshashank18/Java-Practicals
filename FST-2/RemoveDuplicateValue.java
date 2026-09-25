@@ -15,13 +15,10 @@ public class RemoveDuplicateValue {
      */
     public static void main(String[] args) {
 
-        /**
-         * Create a Scanner object to read
-         * input from the user.
-         */
+        // Create Scanner object to read user input.
         Scanner sc = new Scanner(System.in);
 
-        /**
+        /*
          * Create an ArrayList to store
          * the entered elements.
          */
@@ -34,17 +31,14 @@ public class RemoveDuplicateValue {
         System.out.print("Enter the number of elements: ");
         int n = sc.nextInt();
 
-        /**
-         * Read elements from the user
-         * and add them to the ArrayList.
-         */
+        // Read elements from the user.
         System.out.println("Enter the elements:");
 
         for (int i = 0; i < n; i++) {
             list.add(sc.next());
         }
 
-        /**
+        /*
          * Display the original list
          * containing duplicate values.
          */
@@ -52,22 +46,16 @@ public class RemoveDuplicateValue {
         System.out.println(list);
 
         /**
-         * Create a LinkedHashSet from the ArrayList.
          * LinkedHashSet removes duplicate values
          * while maintaining insertion order.
          */
         LinkedHashSet<String> set = new LinkedHashSet<>(list);
 
-        /**
-         * Display the list after removing
-         * duplicate values.
-         */
+        // Display the list after removing duplicates.
         System.out.println("List after removing duplicates:");
         System.out.println(set);
 
-        /**
-         * Close the Scanner object.
-         */
+        /* Close the Scanner object. */
         sc.close();
     }
 }
