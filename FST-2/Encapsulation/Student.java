@@ -1,5 +1,6 @@
 /**
  * Represents a Student using encapsulation.
+ *
  * The student name and age are private and accessed
  * through getter and setter methods.
  */
@@ -15,12 +16,11 @@ class Student {
      */
     private int studentAge;
 
-    /**
+    /*
      * Sets the name of the student.
-     *
-     * @param studentName the name of the student
      */
     public void setStudentName(String studentName) {
+        // Assign the given name to the private variable
         this.studentName = studentName;
     }
 
@@ -33,11 +33,7 @@ class Student {
         this.studentAge = studentAge;
     }
 
-    /**
-     * Returns the name of the student.
-     *
-     * @return the student name
-     */
+    // Returns the name of the student
     public String getStudentName() {
         return studentName;
     }
