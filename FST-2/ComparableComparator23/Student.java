@@ -1,7 +1,12 @@
+package ComparableComparator23;
+
 /**
- * Student class stores student information.
+ * Represents a student with an ID, name, and marks.
+ *
+ * The Comparable interface is used to sort students
+ * by their ID.
  */
-public class Student {
+public class Student implements java.lang.Comparable<Student> {
 
     private int id;
     private String name;
@@ -9,50 +14,45 @@ public class Student {
 
     /**
      * Constructor to initialize student details.
-     *
-     * @param id    student ID
-     * @param name  student name
-     * @param marks student marks
      */
     public Student(int id, String name, int marks) {
+        // Store student information
         this.id = id;
         this.name = name;
         this.marks = marks;
     }
 
-    /**
-     * Returns student ID.
-     *
-     * @return student ID
+    /*
+     * Getter method for student ID.
      */
     public int getId() {
         return id;
     }
 
-    /**
-     * Returns student name.
-     *
-     * @return student name
-     */
+    // Getter method for student name
     public String getName() {
         return name;
     }
 
-    /**
-     * Returns student marks.
-     *
-     * @return student marks
-     */
+    // Getter method for student marks
     public int getMarks() {
         return marks;
     }
 
+    /*
+     * Comparable compares students by their ID.
+     * Integer.compare() returns the sorting result.
+     */
+    @Override
+    public int compareTo(Student other) {
+        return Integer.compare(this.id, other.id);
+    }
+
     /**
-     * Displays student details.
+     * Returns student information as a String.
      */
     @Override
     public String toString() {
         return id + " - " + name + " - " + marks;
     }
-
 }
