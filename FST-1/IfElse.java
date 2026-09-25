@@ -13,49 +13,45 @@ public class IfElse {
      */
     public static void main(String[] args) {
 
-        /**
-         * Create Scanner object to take input from the user.
-         */
+        // Create Scanner object to take input from the user.
         Scanner sc = new Scanner(System.in);
 
-        /**
-         * Ask the user to enter their age.
+        /*
+         * Ask the user to enter their age
+         * and store the entered value.
          */
         System.out.print("Enter your age: ");
         int age = sc.nextInt();
 
         /**
-         * Check if the age is less than 13.
+         * Classify the person based on
+         * the entered age.
          */
         if (age < 13) {
+
+            // Display the child category.
             System.out.println("You are a child");
-        }
 
-        /**
-         * Check if the age is between 13 and 19.
-         */
-        else if (age >= 13 && age <= 19) {
+        } else if (age >= 13 && age <= 19) {
+
+            // Display the teenager category.
             System.out.println("You are a teenager");
-        }
 
-        /**
-         * Check if the age is between 20 and 60.
-         */
-        else if (age >= 20 && age <= 60) {
+        } else if (age >= 20 && age <= 60) {
+
+            // Display the adult category.
             System.out.println("You are an adult");
-        }
 
-        /**
-         * If none of the above conditions are true,
-         * the person is considered a senior citizen.
-         */
-        else {
+        } else {
+
+            /*
+             * Display the senior citizen category
+             * when the other conditions are false.
+             */
             System.out.println("You are a senior citizen");
         }
 
-        /**
-         * Close the Scanner object.
-         */
+        // Close the Scanner object.
         sc.close();
     }
 }
