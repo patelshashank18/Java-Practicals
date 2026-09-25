@@ -1,3 +1,5 @@
+package ComparableComparator23;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -5,26 +7,29 @@ import java.util.Scanner;
 
 /**
  * Demonstrates basic file handling operations.
+ *
+ * This class creates, writes, and reads a text file.
  */
 public class FileHandling {
 
     /**
-     * Creates, writes and reads a file.
+     * Creates, writes, and reads a student file.
      */
     public static void demonstrate() {
 
+        // Create a File object
         File file = new File("student.txt");
 
         try {
 
-            // Create a new file.
-
+            /*
+             * Creates a new file if it does not already exist.
+             */
             if (file.createNewFile()) {
                 System.out.println("File created successfully.");
             }
 
-            // Write student information into the file.
-
+            // Writes student data into the file.
             FileWriter writer = new FileWriter(file);
 
             writer.write("Student Name: Amit\n");
@@ -34,8 +39,10 @@ public class FileHandling {
 
             System.out.println("Data written successfully.");
 
-            // Read the contents of the file.
-
+            /*
+             * Reads the contents of the file line by line
+             * and displays them on the console.
+             */
             Scanner scanner = new Scanner(file);
 
             System.out.println("\nFile Content:");
@@ -48,8 +55,7 @@ public class FileHandling {
 
         } catch (IOException e) {
 
-            // Handle file-related exceptions.
-
+            // Handles file-related errors.
             System.out.println("File error: " + e.getMessage());
         }
     }
