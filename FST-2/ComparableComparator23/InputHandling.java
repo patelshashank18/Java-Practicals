@@ -1,24 +1,31 @@
+package ComparableComparator23;
+
 import java.util.Scanner;
 
 /**
  * Demonstrates input handling using Scanner.
+ *
+ * This class takes student information
+ * from the user and displays it.
  */
 public class InputHandling {
 
     /**
-     * Takes student information from the user.
+     * Takes student name and age from the user.
      */
     public static void demonstrate() {
 
+        // Create Scanner object for user input
         Scanner scanner = new Scanner(System.in);
 
-        // Read student name from the user.
-
+        /*
+         * Takes the student's name as input.
+         * nextLine() reads the complete line.
+         */
         System.out.print("Enter student name: ");
         String name = scanner.nextLine();
 
-        // Read student age from the user.
-
+        // Takes student age as input
         System.out.print("Enter student age: ");
         int age = scanner.nextInt();
 
