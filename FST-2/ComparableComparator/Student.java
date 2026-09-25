@@ -3,6 +3,8 @@ package ComparableComparator;
 /**
  * Represents a student and implements the Comparable
  * interface to sort students by roll number.
+ *
+ * This class stores roll number, name, and marks.
  */
 class Student implements Comparable<Student> {
 
@@ -18,27 +20,23 @@ class Student implements Comparable<Student> {
      * @param marks  student marks
      */
     Student(int rollNo, String name, int marks) {
+
+        // Assign values to student variables
         this.rollNo = rollNo;
         this.name = name;
         this.marks = marks;
     }
 
-    /**
-     * Compares students by roll number.
-     *
-     * @param s student to compare with
-     * @return comparison result based on roll number
+    /*
+     * Compares two students using their roll numbers.
+     * Students are sorted in ascending order.
      */
     @Override
     public int compareTo(Student s) {
         return this.rollNo - s.rollNo;
     }
 
-    /**
-     * Returns student details.
-     *
-     * @return roll number, name, and marks
-     */
+    // Returns student details as a String.
     @Override
     public String toString() {
         return rollNo + " " + name + " " + marks;
