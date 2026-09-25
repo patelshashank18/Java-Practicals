@@ -1,5 +1,9 @@
+
 /**
  * Demonstrates the concept of encapsulation in Java.
+ *
+ * Encapsulation means keeping data private
+ * and accessing it through getter and setter methods.
  */
 public class Encapsulation {
 
@@ -10,13 +14,12 @@ public class Encapsulation {
      */
     public static void main(String[] args) {
 
-        /**
-         * Create a Student object.
-         */
+        // Create a Student object.
         Student student = new Student();
 
-        /**
+        /*
          * Set student details using setter methods.
+         * The private variables are accessed indirectly.
          */
         student.setStudentName("Rahul");
         student.setStudentAge(20);
