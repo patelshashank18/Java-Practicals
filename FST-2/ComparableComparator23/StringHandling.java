@@ -1,34 +1,44 @@
+package ComparableComparator23;
+
 /**
- * Demonstrates common String handling methods.
+ * Demonstrates common String handling operations.
+ *
+ * This class shows different methods
+ * used to manipulate and check Strings.
  */
 public class StringHandling {
 
     /**
-     * Demonstrates different String operations.
+     * Demonstrates different String methods.
      */
     public static void demonstrate() {
 
+        // Create a String variable
         String text = "Java Programming";
 
-        // Find the length of the String.
-
+        /*
+         * Returns the number of characters
+         * present in the String.
+         */
         System.out.println("Length: " + text.length());
 
-        // Convert String into uppercase.
-
+        // Converts the String into uppercase.
         System.out.println("Uppercase: " + text.toUpperCase());
 
-        // Convert String into lowercase.
-
+        /*
+         * Converts all characters of the String
+         * into lowercase.
+         */
         System.out.println("Lowercase: " + text.toLowerCase());
 
-        // Check whether String contains a word.
-
+        // Checks whether the String contains "Java".
         System.out.println(
                 "Contains Java: " + text.contains("Java"));
 
-        // Replace one word with another.
-
+        /*
+         * Replaces the word "Java" with "Spring"
+         * in the given String.
+         */
         System.out.println(
                 "Replace: " + text.replace("Java", "Spring"));
     }
