@@ -4,8 +4,8 @@ import java.util.List;
 /**
  * Demonstrates the Comparator interface.
  *
- * Comparator is used to define different sorting orders
- * for the same type of object.
+ * Comparator allows us to sort the same object
+ * in different ways.
  */
 public class Comparator {
 
@@ -14,14 +14,18 @@ public class Comparator {
      */
     public static void demonstrate() {
 
+        // Create a list of students
         List<Student> students = new ArrayList<>();
 
+        /*
+         * Adding student objects to the list.
+         * Each student has ID, name, and marks.
+         */
         students.add(new Student(103, "Rahul", 75));
         students.add(new Student(101, "Amit", 85));
         students.add(new Student(102, "Neha", 90));
 
         // Sort students alphabetically by name.
-
         students.sort(
                 java.util.Comparator.comparing(Student::getName));
 
@@ -32,7 +36,6 @@ public class Comparator {
         }
 
         // Sort students by marks in descending order.
-
         students.sort(
                 java.util.Comparator
                         .comparingInt(Student::getMarks)
