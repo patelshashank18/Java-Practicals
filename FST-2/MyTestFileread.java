@@ -18,45 +18,45 @@ public class MyTestFileread {
      */
     public static void main(String[] args) {
 
-        // Creates a Scanner object for user input.
+        // Create Scanner object for user input.
         Scanner sc = new Scanner(System.in);
 
+        // Open myTestFile for reading.
         try (BufferedReader br = new BufferedReader(
                 new FileReader("myTestFile"))) {
 
-            // Stores each line read from the file.
+            // Store each line read from the file.
             String line;
 
-            // Displays the heading for the file contents.
+            // Display the heading for file contents.
             System.out.println("File Contents:");
             System.out.println("--------------------");
 
-            // Reads the file line by line until the end of the file is reached.
+            // Read the file line by line.
             while ((line = br.readLine()) != null) {
 
-                // Removes leading and trailing spaces from the current line.
+                // Remove leading and trailing spaces.
                 line = line.trim();
 
-                // Checks whether the line is not empty.
+                // Process the line only if it is not empty.
                 if (!line.isEmpty()) {
 
-                    // Demonstrates String Handling by converting the line to uppercase.
+                    // Convert the line to uppercase.
                     String upperCaseLine = line.toUpperCase();
 
-                    // Demonstrates String Handling by converting the line to lowercase.
+                    // Convert the line to lowercase.
                     String lowerCaseLine = line.toLowerCase();
 
-                    // Checks whether the line contains the word "name".
+                    // Check whether the line contains "name".
                     boolean containsName = lowerCaseLine.contains("name");
 
-                    // Replaces the colon with " : " to demonstrate String replacement.
+                    // Add spaces around the colon.
                     String formattedLine = line.replace(":", " : ");
 
-                    // Displays the original and processed String.
+                    // Display the formatted line.
                     System.out.println(formattedLine);
 
-                    // Displays additional String handling information when the line contains
-                    // "name".
+                    // Display uppercase text when the line contains "name".
                     if (containsName) {
                         System.out.println(
                                 "Uppercase: " + upperCaseLine);
@@ -66,12 +66,11 @@ public class MyTestFileread {
 
         } catch (IOException e) {
 
-            // Handles file-related exceptions.
+            // Handle file-related exceptions.
             System.out.println("Error: " + e.getMessage());
         }
 
-        // Closes the Scanner object.
+        // Close the Scanner object.
         sc.close();
     }
-
 }
