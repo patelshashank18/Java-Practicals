@@ -11,10 +11,13 @@ import java.util.*;
  */
 public class ComparableComparator {
 
+    /**
+     * Main method to demonstrate different
+     * collection and sorting operations.
+     */
     public static void main(String[] args) {
 
         // Condition 1: Find index of an array element.
-
         int[] arr = { 10, 20, 30, 40, 50 };
         int search = 30;
 
@@ -25,8 +28,10 @@ public class ComparableComparator {
             }
         }
 
-        // Condition 2: List.
-
+        /*
+         * Condition 2: List.
+         * Stores multiple Element objects.
+         */
         List<Element> list = new ArrayList<>();
 
         list.add(new Element(3, "Rahul", 70));
@@ -36,7 +41,6 @@ public class ComparableComparator {
         System.out.println("List: " + list);
 
         // Condition 3: Set.
-
         Set<String> set = new HashSet<>();
 
         set.add("Jigar");
@@ -45,8 +49,10 @@ public class ComparableComparator {
 
         System.out.println("Set: " + set);
 
-        // Condition 4: Map.
-
+        /*
+         * Condition 4: Map.
+         * Stores student IDs as keys and names as values.
+         */
         Map<Integer, String> map = new HashMap<>();
 
         map.put(1, "Jigar");
@@ -55,19 +61,17 @@ public class ComparableComparator {
         System.out.println("Map: " + map);
 
         // Condition 5: Comparable - Sort by ID.
-
         Collections.sort(list);
         System.out.println("By ID: " + list);
 
-        // Condition 6: Comparator - Sort by Name.
-
+        /**
+         * Condition 6: Comparator - Sort by Name.
+         */
         Collections.sort(list, new SortByName());
         System.out.println("By Name: " + list);
 
         // Condition 7: Comparator - Sort by Marks.
-
         Collections.sort(list, new SortByMarks());
         System.out.println("By Marks: " + list);
     }
-
 }
