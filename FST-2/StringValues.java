@@ -2,6 +2,7 @@
  * Program to demonstrate storing and displaying String values
  * using ArrayList and Iterator.
  */
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -17,13 +18,12 @@ public class StringValues {
      */
     public static void main(String[] args) {
 
-        /**
-         * Creates an ArrayList to store String values.
-         */
+        // Create an ArrayList to store String values.
         ArrayList<String> list = new ArrayList<>();
 
-        /**
-         * Adds String values to the list.
+        /*
+         * Add different String values
+         * to the ArrayList.
          */
         list.add("Hello");
         list.add("World");
@@ -32,22 +32,23 @@ public class StringValues {
         list.add("Programming");
 
         /**
-         * Creates an Iterator object to traverse the list.
+         * Create an Iterator object
+         * to traverse the ArrayList.
          */
         Iterator<String> iterator = list.iterator();
 
-        /**
-         * Prints all String values using Iterator.
-         */
+        // Display a heading before printing the values.
         System.out.println("String values in the list:");
 
-        /**
-         * Checks whether the iterator has another element.
+        /*
+         * Continue looping while
+         * another element is available.
          */
         while (iterator.hasNext()) {
 
             /**
-             * Retrieves and prints the next String value.
+             * Retrieve and display the next
+             * String value from the Iterator.
              */
             System.out.println(iterator.next());
         }
