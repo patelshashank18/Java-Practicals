@@ -1,10 +1,10 @@
 /**
  * Practical 12:
- * Write a program to demonstrate static methods, variables, and blocks.
+ * Demonstrates static methods, variables, and blocks.
  *
  * <p>
- * Demonstrates the use of static variables, static blocks,
- * and static methods.
+ * This program shows how static members
+ * are accessed without creating an object.
  * </p>
  */
 public class StaticMethod {
@@ -14,11 +14,20 @@ public class StaticMethod {
      */
     static String collegeName = "ABC College";
 
+    /*
+     * Static block executes automatically
+     * when the class is loaded.
+     */
     static {
         System.out.println("Static block is executed.");
     }
 
+    /**
+     * Displays the name of the college.
+     */
     static void displayCollege() {
+
+        // Display the value of the static variable.
         System.out.println("College Name: " + collegeName);
     }
 
@@ -29,9 +38,13 @@ public class StaticMethod {
      */
     public static void main(String[] args) {
 
+        // Display a message when the main method starts.
         System.out.println("Main method is executed.");
 
+        /*
+         * Call the static method directly
+         * without creating an object.
+         */
         displayCollege();
     }
-
 }
