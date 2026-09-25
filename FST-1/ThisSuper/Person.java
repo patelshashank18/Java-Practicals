@@ -1,24 +1,40 @@
 package ThisSuper;
 
 /**
- * Parent class for the Student class.
- * Demonstrates inheritance and the super keyword.
+ * Main class to demonstrate the use of
+ * this and super keywords in Java.
  */
-class Person {
-
-    String name = "Jigar";
+public class ThisSuper {
 
     /**
-     * Parent class constructor.
+     * Main method to execute the program.
+     *
+     * @param args command-line arguments
      */
-    Person() {
-        System.out.println("Person Constructor Called");
-    }
+    public static void main(String[] args) {
 
-    /**
-     * Displays the parent class name.
-     */
-    void display() {
-        System.out.println("Person Name: " + name);
+        // Create a Student object.
+        Student s = new Student();
+
+        /*
+         * Display a blank line before
+         * demonstrating this and super.
+         */
+        System.out.println();
+
+        /**
+         * Call the show() method to demonstrate
+         * access to current and parent class variables.
+         */
+        s.show();
+
+        // Display a blank line for better output formatting.
+        System.out.println();
+
+        /*
+         * Call the overridden display() method
+         * of the Student class.
+         */
+        s.display();
     }
 }
