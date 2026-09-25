@@ -1,35 +1,35 @@
+package ComparableComparator23;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Demonstrates sorting objects using the Comparable concept.
- *
- * Comparable is used to define the natural sorting order
- * of objects.
+ * Demonstrates sorting students using the Comparable interface.
  */
 public class Comparable {
 
-    /**
-     * Demonstrates sorting students by their ID.
-     */
     public static void demonstrate() {
 
+        // Create a list to store students
         List<Student> students = new ArrayList<>();
 
+        /*
+         * Add student objects to the list.
+         * Each student has an ID, name, and marks.
+         */
         students.add(new Student(103, "Rahul", 75));
         students.add(new Student(101, "Amit", 85));
         students.add(new Student(102, "Neha", 90));
 
-        // Sort students by ID.
-
-        Collections.sort(students,
-                (student1, student2) -> Integer.compare(student1.getId(), student2.getId()));
+        // Sort students using Comparable
+        Collections.sort(students);
 
         System.out.println("Students sorted by ID:");
 
-        // Display the sorted students.
-
+        /*
+         * Display each student after sorting.
+         */
         for (Student student : students) {
             System.out.println(student);
         }
