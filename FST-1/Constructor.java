@@ -1,6 +1,7 @@
 /**
- * Demonstrates default and parameterized constructors
- * using two integer values.
+ * 
+ *Practical 7: Write a program to demonstrate the example of constructor and Parameterized constructor 
+ *(E.g. Pass two integer parameters and apply any mathematical formula).
  */
 public class Constructor {
 
