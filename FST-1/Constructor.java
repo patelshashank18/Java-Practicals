@@ -1,11 +1,6 @@
 /**
- * Practical 7: Write a program to demonstrate the example of constructor and
- * parameterized constructor.
- *
- * <p>
  * Demonstrates default and parameterized constructors
  * using two integer values.
- * </p>
  */
 public class Constructor {
 
@@ -15,8 +10,15 @@ public class Constructor {
      * Default constructor initializes both numbers to zero.
      */
     Constructor() {
+
+        // Initialize both numbers to zero.
         num1 = 0;
         num2 = 0;
+
+        /*
+         * Display the constructor type
+         * and initialized values.
+         */
         System.out.println("Default Constructor Called");
         System.out.println("Number 1 = " + num1);
         System.out.println("Number 2 = " + num2);
@@ -30,8 +32,15 @@ public class Constructor {
      * @param b second number
      */
     Constructor(int a, int b) {
+
+        // Assign the given values to the instance variables.
         num1 = a;
         num2 = b;
+
+        /*
+         * Display a message to indicate
+         * that the parameterized constructor was called.
+         */
         System.out.println("\nParameterized Constructor Called");
     }
 
@@ -39,8 +48,17 @@ public class Constructor {
      * Displays both numbers and their sum.
      */
     void display() {
+
+        // Display the first number.
         System.out.println("Number 1 = " + num1);
+
+        // Display the second number.
         System.out.println("Number 2 = " + num2);
+
+        /**
+         * Calculate and display the sum
+         * of both numbers.
+         */
         System.out.println("Sum = " + (num1 + num2));
     }
 
@@ -51,12 +69,16 @@ public class Constructor {
      */
     public static void main(String[] args) {
 
-        // Creates an object using the default constructor.
+        // Create an object using the default constructor.
         Constructor obj1 = new Constructor();
 
-        // Creates an object using the parameterized constructor.
+        /*
+         * Create an object using the parameterized constructor
+         * and pass two integer values.
+         */
         Constructor obj2 = new Constructor(20, 30);
+
+        // Display the numbers and their sum.
         obj2.display();
     }
-
 }
